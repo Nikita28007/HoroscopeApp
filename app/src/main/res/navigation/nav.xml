@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/fragmentRecycler">
+
+    <fragment
+        android:id="@+id/fragmentRecycler"
+        android:name="com.horoscope.app.FragmentRecycler"
+        android:label="FragmentRecycler" >
+        <action
+            android:id="@+id/action_fragmentRecycler_to_fragmentDetails"
+            app:destination="@id/fragmentDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetails"
+        android:name="com.horoscope.app.FragmentDetails"
+        android:label="FragmentDetails" />
+</navigation>
